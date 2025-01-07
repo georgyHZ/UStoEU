@@ -16,5 +16,9 @@ public class Main {
         Speedometer speedometer = new Speedometer();
 
         System.out.println("Can the car drive? " + speedometer.checkIfBelowMaxSpeed(adapter));
+
+        //Template
+        USD usd = new USD();
+        usd.print();
     }
 }
