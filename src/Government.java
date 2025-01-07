@@ -1,13 +1,13 @@
 package src;
 
 //this is a Singleton class
-//the Government declares how many centimetres are in an inch
+//the Government declares how many centimetres are in an inch once and never changes it
 
 public class Government {
 
     private static Government instance = null;
 
-    public Double cmToInchRatio;
+    private Double cmToInchRatio;
 
     private Government() {
         cmToInchRatio = 0.3937;
