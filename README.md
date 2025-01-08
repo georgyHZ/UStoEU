@@ -7,6 +7,7 @@ the contribution exactly equal.
 <h3>Repository Link</h3>
 <a>https://github.com/georgyHZ/UStoEU</a>
 
+
 <h3>Code Explanation</h3>
 
 <h4>Centimetre to Inch converter - Singleton</h4>
@@ -40,5 +41,28 @@ and setCountry) to provide specific details for their respective banknotes. This
 a consistent structure for creating and managing banknote objects while allowing subclasses to 
 define their unique details, promoting code reusability and maintainability.
 
+<h4> Factory Method Pattern (Creational) </h4>
 
+
+The Factory Method pattern provides an interface for creating objects in a superclass but allows
+subclasses to alter the type of objects that will be created.
+This pattern is used to convert weights (pounds to kilograms, ounces to grams) 
+by creating specific UnitConverter objects through subclassing the WeightConverter.
+Classes: WeightConverter, PoundsToKilogramsConverter, OuncesToGramsConverter, UnitConverter
+
+<h4> Command Pattern (Behavioral) </h4>
+
+The Command pattern encapsulates a request as an object, thereby allowing users to parameterize
+clients with different requests, queue or log requests, and support undoable operations.
+This pattern is used for executing different conversion commands, such as converting temperature
+and distance, by encapsulating the conversion actions within command objects.
+Classes: Command, TemperatureConversionCommand, DistanceConversionCommand, Converter, ConversionInvoker
+
+<h4> Decorator Pattern (Structural) </h4> 
+
+The Decorator pattern allows behavior to be added to an individual object, dynamically,
+without affecting the behavior of other objects from the same class.
+This pattern is used to add additional functionalities such as logging and validation
+to the unit conversion process by decorating the BasicConverter.\
+Classes: Converter, BasicConverter, ConverterDecorator, LoggingConverterDecorator, ValidationConverterDecorator
 
